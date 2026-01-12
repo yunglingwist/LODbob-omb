@@ -1,0 +1,32 @@
+id,dcterms:title,dcterms:type,sp:role,sp:group,sp:portrayedBy,sp:voicedBy,sp:relatedTo,dcterms:description
+CHAR_SCOTT,Scott Pilgrim,sp:Character,Protagonist,Sex Bob-Omb,ACT_CERA,ACT_CERA,Dating:CHAR_RAMONA; Ex-Dating:CHAR_KNIVES; Ex-Dating:CHAR_ENVY,23-year-old bass player for Sex Bob-Omb.
+CHAR_RAMONA,Ramona Flowers,sp:Character,Protagonist,Amazon Delivery,ACT_WINSTEAD,ACT_WINSTEAD,Dating:CHAR_SCOTT; Ex-Dating:League of Evil Exes,Mysterious American delivery girl with seven evil exes.
+CHAR_KNIVES,Knives Chau,sp:Character,Support,Sex Bob-Omb Fan,ACT_WONG,ACT_WONG,Ex-Dating:CHAR_SCOTT; Rival:CHAR_RAMONA,High school student who briefly dates Scott.
+CHAR_ENVY,Envy Adams,sp:Character,Antagonist,The Clash at Demonhead,ACT_LARSON,ACT_LARSON,Ex-Dating:CHAR_SCOTT; Dating:CHAR_TODD,Scott's ex-girlfriend who became a famous rock star.
+CHAR_STEPHEN,Stephen Stills,sp:Character,Support,Sex Bob-Omb,ACT_WEBBER,ACT_WEBBER,Bandmate:CHAR_SCOTT; Bandmate:CHAR_KIM,Lead singer and guitarist of Sex Bob-Omb.
+CHAR_KIM,Kim Pine,sp:Character,Support,Sex Bob-Omb,ACT_PILL,ACT_PILL,Bandmate:CHAR_SCOTT; Ex-Dating:CHAR_SCOTT,Drummer of Sex Bob-Omb with a sarcastic attitude.
+CHAR_YOUNG_NEIL,Young Neil,sp:Character,Support,Sex Bob-Omb,ACT_SIMMONS,ACT_SIMMONS,Fan:Sex Bob-Omb,Stephen Stills' roommate and biggest fan.
+CHAR_WALLACE,Wallace Wells,sp:Character,Support,Roommates,ACT_CULKIN,ACT_CULKIN,Roommate:CHAR_SCOTT,Scott's cool and gossiping roommate.
+CHAR_MATTHEW,Matthew Patel,sp:Character,Antagonist,League of Evil Exes,ACT_BHABHA,ACT_BHABHA,Ex-Dating:CHAR_RAMONA,Evil Ex #1. Pirate hipster with mystic powers.
+CHAR_LUCAS,Lucas Lee,sp:Character,Antagonist,League of Evil Exes,ACT_EVANS,ACT_EVANS,Ex-Dating:CHAR_RAMONA,Evil Ex #2. Famous action movie star and skateboarder.
+CHAR_TODD,Todd Ingram,sp:Character,Antagonist,League of Evil Exes,ACT_ROUTH,ACT_ROUTH,Ex-Dating:CHAR_RAMONA; Dating:CHAR_ENVY,Evil Ex #3. Vegan bass player with psychic vegan powers.
+CHAR_ROXY,Roxy Richter,sp:Character,Antagonist,League of Evil Exes,ACT_WHITMAN,ACT_WHITMAN,Ex-Dating:CHAR_RAMONA,Evil Ex #4. Half-ninja with teleportation abilities.
+CHAR_KYLE,Kyle Katayanagi,sp:Character,Antagonist,League of Evil Exes,ACT_SAITO_S,ACT_CIHI,Ex-Dating:CHAR_RAMONA; Brother:CHAR_KEN,Evil Ex #5 (Twin). Electronic music expert.
+CHAR_KEN,Ken Katayanagi,sp:Character,Antagonist,League of Evil Exes,ACT_SAITO_K,ACT_CIHI,Ex-Dating:CHAR_RAMONA; Brother:CHAR_KYLE,Evil Ex #6 (Twin). Electronic music expert.
+CHAR_GIDEON,Gideon Graves,sp:Character,Antagonist,League of Evil Exes,ACT_SCHWARTZMAN,ACT_SCHWARTZMAN,Ex-Dating:CHAR_RAMONA; Leader:League of Evil Exes,Evil Ex #7. Mastermind behind the League.
+ACT_CERA,Michael Cera,sp:Actor,Cast,,,,,Canadian actor.
+ACT_WINSTEAD,Mary Elizabeth Winstead,sp:Actor,Cast,,,,,American actress.
+ACT_CULKIN,Kieran Culkin,sp:Actor,Cast,,,,,American actor.
+ACT_WONG,Ellen Wong,sp:Actor,Cast,,,,,Canadian actress.
+ACT_LARSON,Brie Larson,sp:Actor,Cast,,,,,American actress.
+ACT_EVANS,Chris Evans,sp:Actor,Cast,,,,,American actor.
+ACT_ROUTH,Brandon Routh,sp:Actor,Cast,,,,,American actor.
+ACT_WHITMAN,Mae Whitman,sp:Actor,Cast,,,,,American actress.
+ACT_SAITO_S,Shota Saito,sp:Actor,Cast,,,,,Japanese actor.
+ACT_SAITO_K,Keita Saito,sp:Actor,Cast,,,,,Japanese actor.
+ACT_CIHI,Julian Cihi,sp:Actor,Cast,,,,,Voice actor.
+ACT_SCHWARTZMAN,Jason Schwartzman,sp:Actor,Cast,,,,,American actor.
+ACT_WEBBER,Mark Webber,sp:Actor,Cast,,,,,American actor.
+ACT_PILL,Alison Pill,sp:Actor,Cast,,,,,Canadian actress.
+ACT_SIMMONS,Johnny Simmons,sp:Actor,Cast,,,,,American actor.
+ACT_BHABHA,Satya Bhabha,sp:Actor,Cast,,,,,Actor.
