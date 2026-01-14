@@ -1,4 +1,7 @@
 id,dcterms:title,rdf:type,schema:producer,schema:performer,schema:datePublished,dcterms:format,schema:genre,dcterms:isPartOf,owl:sameAs
 item_soundtrack,Scott Pilgrim vs. the World (Original Soundtrack),schema:MusicAlbum,Nigel Godrich,,2010,CD; Digital,Indie Rock,local:media_movie,https://www.wikidata.org/wiki/Q7437073
+item_song_we_are_sex_bob_omb,We Are Sex Bob-Omb,schema:MusicRecording,,local:group_sex_bob_omb,2010,Digital,Garage Rock; Punk,local:item_soundtrack,
 item_song_garbage_truck,Garbage Truck,schema:MusicRecording,,local:group_sex_bob_omb,2010,Digital,Garage Rock,local:item_soundtrack,
+item_song_summertime,Summertime,schema:MusicRecording,,local:group_sex_bob_omb,2010,Digital,Garage Rock,local:item_soundtrack,
+item_song_threshold,Threshold,schema:MusicRecording,,local:group_sex_bob_omb,2010,Digital,Garage Rock; Fuzz,local:item_soundtrack,
 item_song_black_sheep,Black Sheep,schema:MusicRecording,,local:group_clash_at_demonhead,2010,Digital,Indie Rock,local:item_soundtrack,
