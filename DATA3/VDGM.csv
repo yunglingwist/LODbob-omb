@@ -1,0 +1,2 @@
+id,dcterms:title,rdf:type,schema:publisher,schema:genre,schema:gamePlatform,schema:datePublished,schema:isBasedOn,dcterms:identifier
+media_game,Scott Pilgrim vs. The World The Game,schemaVideoGame,Ubisoft,Beat 'em up,PlayStation; Xbox; Nintendo Switch; PC,2010,localmedia_comic_series,https://www.wikidata.org/wiki/Q2080333
