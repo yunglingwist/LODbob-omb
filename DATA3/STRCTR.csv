@@ -1,0 +1,10 @@
+Subject,Predicate,Object,Label,Type
+local:universe_scott_pilgrim,schema:hasPart,local:category_medias,Scott Pilgrim Universe,schema:CreativeWork
+local:category_medias,schema:hasPart,local:media_movie,Media Adaptations,skos:ConceptScheme
+local:category_medias,schema:hasPart,local:media_comic_series,Media Adaptations,skos:ConceptScheme
+local:category_medias,schema:hasPart,local:media_anime,Media Adaptations,skos:ConceptScheme
+local:category_medias,schema:hasPart,local:media_game,Media Adaptations,skos:ConceptScheme
+local:media_movie,,,Scott Pilgrim vs. The World (Movie),schema:Movie
+local:media_comic_series,,,Scott Pilgrim (Graphic Novels),schema:ComicSeries
+local:media_anime,,,Scott Pilgrim Takes Off (Anime),schema:TVSeries
+local:media_game,,,Scott Pilgrim vs. The World: The Game,schema:VideoGame

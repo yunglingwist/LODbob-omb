@@ -1,0 +1,2 @@
+id,dcterms:title,rdf:type,schema:author,schema:publisher,schema:startDate,schema:endDate,schema:numberOfVolumes,schema:genre,dcterms:identifier
+media_comic_series,Scott Pilgrim (Graphic Novels),schema:ComicSeries,Bryan Lee O'Malley,Oni Press,2004,2010,6,Action; Romance; Comedy; Fantasy,https://www.wikidata.org/wiki/Q1199291

@@ -1,0 +1,2 @@
+id,foaf:name,rdf:type,dcterms:description,schema:address,schema:architect,schema:dateCreated,dcterms:isPartOf,owl:sameAs
+item_casa_loma,Casa Loma,schema:LandmarksOrHistoricalBuildings,Gothic Revival style mansion in Toronto. Setting for Lucas Lee's movie shoot and battle with Scott Pilgrim.,1 Austin Terrace Toronto Ontario Canada,E. J. Lennox,1911-1914,local:universe_scott_pilgrim,https://www.wikidata.org/wiki/Q1046446

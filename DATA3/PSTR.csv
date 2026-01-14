@@ -1,0 +1,2 @@
+id,dcterms:title,rdf:type,schema:creator,schema:dateCreated,dcterms:format,dcterms:isPartOf,schema:url
+item_movie_poster,Theatrical Release Poster,schema:ImageObject,Empire Design,2010,Image/JPEG,local:media_movie,https://upload.wikimedia.org/wikipedia/en/1/14/Scott_Pilgrim_vs._the_World_teaser.jpg

@@ -1,0 +1,2 @@
+id,dcterms:title,rdf:type,schema:author,dcterms:language,dcterms:format,schema:dateCreated,dcterms:isPartOf,owl:sameAs
+item_screenplay,Scott Pilgrim vs. the World (Screenplay),schema:CreativeWork,Edgar Wright; Michael Bacall,English,PDF/Text,2009,local:media_movie,https://imsdb.com/scripts/Scott-Pilgrim-vs-the-World.html
