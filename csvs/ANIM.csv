@@ -1,2 +1,2 @@
 id,dcterms:title,rdf:type,schema:director,schema:screenwriter,schema:productionCompany,schema:broadcaster,schema:datePublished,schema:numberOfSeasons,schema:numberOfEpisodes,schema:genre,schema:isBasedOn,dcterms:identifier
-media_anime,Scott Pilgrim Takes Off,schema:TVSeries,Abel Góngora,Bryan Lee O'Malley; BenDavid Grabinski,Science SARU; UCP,Netflix,2023,1,8,Action; Adventure; Comedy; Fantasy,local:media_comic_series,https://www.wikidata.org/wiki/Q117351362
+media_anime,Scott Pilgrim Takes Off,schema:TVSeries,Abel Gongora,Bryan Lee O'Malley; BenDavid Grabinski,Science SARU; UCP,Netflix,2023,1,8,Action; Adventure; Comedy; Fantasy,local:media_comic_series,https://www.wikidata.org/wiki/Q117351362
