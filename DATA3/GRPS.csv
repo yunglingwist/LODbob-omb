@@ -1,0 +1,5 @@
+id,foaf:name,rdf:type,dcterms:description,owl:sameAs
+group_league_of_evil_exes,League of Evil Exes,foaf:Organization,An organization of Ramona Flowers' seven evil exes.,https://scottpilgrim.fandom.com/wiki/League_of_Evil_Exes
+group_sex_bob_omb,Sex Bob-Omb,mo:MusicGroup,Indie rock band featuring Scott Pilgrim.,https://scottpilgrim.fandom.com/wiki/Sex_Bob-Omb
+group_clash_at_demonhead,The Clash at Demonhead,mo:MusicGroup,Famous rock band led by Envy Adams.,https://scottpilgrim.fandom.com/wiki/The_Clash_at_Demonhead
+group_amazon,Amazon.ca,foaf:Organization,Delivery company employing Ramona Flowers.,

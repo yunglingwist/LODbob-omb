@@ -1,0 +1,31 @@
+id,foaf:name,rdf:type,schema:roleName,schema:portrayedBy,org:memberOf,owl:sameAs,foaf:page
+char_scott_pilgrim,Scott Pilgrim,schema:FictionalCharacter,Protagonist,local:person_michael_cera,local:group_sex_bob_omb,https://www.wikidata.org/wiki/Q6122585,https://scottpilgrim.fandom.com/wiki/Scott_Pilgrim
+char_ramona_flowers,Ramona Flowers,schema:FictionalCharacter,Protagonist,local:person_mary_winstead,local:group_amazon,https://www.wikidata.org/wiki/Q6099320,https://scottpilgrim.fandom.com/wiki/Ramona_Flowers
+char_knives_chau,Knives Chau,schema:FictionalCharacter,Support,local:person_ellen_wong,,https://www.wikidata.org/wiki/Q5960245,https://scottpilgrim.fandom.com/wiki/Knives_Chau
+char_envy_adams,Envy Adams,schema:FictionalCharacter,Support,local:person_brie_larson,local:group_clash_at_demonhead,,https://scottpilgrim.fandom.com/wiki/Envy_Adams
+char_stephen_stills,Stephen Stills,schema:FictionalCharacter,Support,local:person_mark_webber,local:group_sex_bob_omb,,https://scottpilgrim.fandom.com/wiki/Stephen_Stills
+char_kim_pine,Kim Pine,schema:FictionalCharacter,Support,local:person_alison_pill,local:group_sex_bob_omb,https://www.wikidata.org/wiki/Q133862338,https://scottpilgrim.fandom.com/wiki/Kim_Pine
+char_wallace_wells,Wallace Wells,schema:FictionalCharacter,Support,local:person_kieran_culkin,,,https://scottpilgrim.fandom.com/wiki/Wallace
+char_neil_nordegraf,Neil Nordegraf,schema:FictionalCharacter,Support,local:person_johnny_simmons,local:group_sex_bob_omb,,https://scottpilgrim.fandom.com/wiki/Neil
+char_matthew_patel,Matthew Patel,schema:FictionalCharacter,Antagonist,local:person_satya_bhabha,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Matthew_Patel
+char_lucas_lee,Lucas Lee,schema:FictionalCharacter,Antagonist,local:person_chris_evans,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Lucas_Lee
+char_todd_ingram,Todd Ingram,schema:FictionalCharacter,Antagonist,local:person_brandon_routh,local:group_league_of_evil_exes;local:group_clash_at_demonhead,,https://scottpilgrim.fandom.com/wiki/Todd_Ingram
+char_roxanne_richter,Roxanne Richter,schema:FictionalCharacter,Antagonist,local:person_mae_whitman,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Roxie_Richter
+char_ken_katayanagi,Ken Katayanagi,schema:FictionalCharacter,Antagonist,local:person_shota_saito,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Ken_Katayanagi
+char_kyle_katayanagi,Kyle Katayanagi,schema:FictionalCharacter,Antagonist,local:person_keita_saito,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Kyle_Katayanagi
+char_gideon_graves,Gideon Graves,schema:FictionalCharacter,Antagonist,local:person_jason_schwartzman,local:group_league_of_evil_exes,,https://scottpilgrim.fandom.com/wiki/Gideon_Graves
+person_michael_cera,Michael Cera,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q309555,
+person_mary_winstead,Mary Elizabeth Winstead,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q207873,
+person_ellen_wong,Ellen Wong,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q388843,
+person_brie_larson,Brie Larson,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q29328,
+person_mark_webber,Mark Webber,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q1378842,
+person_alison_pill,Alison Pill,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q237781,
+person_kieran_culkin,Kieran Culkin,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q313204,
+person_johnny_simmons,Johnny Simmons,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q116636,
+person_satya_bhabha,Satya Bhabha,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q7426855,
+person_chris_evans,Chris Evans,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q178348,
+person_brandon_routh,Brandon Routh,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q299324,
+person_mae_whitman,Mae Whitman,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q232307,
+person_shota_saito,Shota Saito,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q11500347,
+person_keita_saito,Keita Saito,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q137067984,
+person_jason_schwartzman,Jason Schwartzman,foaf:Person,Actor,,,https://www.wikidata.org/wiki/Q313705,

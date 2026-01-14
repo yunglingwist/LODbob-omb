@@ -1,0 +1,2 @@
+id,foaf:name,rdf:type,dcterms:description,schema:ownedBy,schema:brand,schema:productionDate,schema:material,schema:color,owl:sameAs
+item_bass_guitar,Rickenbacker 4001 Bass,mo:Instrument,Scott Pilgrim's main instrument.,local:char_scott_pilgrim,Rickenbacker,1961–1981,Bound maple;Wallnut;Rosewood,Fireglo Red,https://www.wikidata.org/wiki/Q922217

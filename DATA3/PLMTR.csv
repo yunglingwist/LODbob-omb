@@ -1,0 +1,2 @@
+id,dcterms:title,rdf:type,mo:performer,mo:genre,dcterms:issued,dcterms:medium,dcterms:extent,mo:publisher,dcterms:description,dcterms:identifier,dcterms:relation
+item_plumtree,Predicts the Future,http://purl.org/ontology/mo/Release,https://www.wikidata.org/wiki/Q7205485,Indie Rock; Power Pop,1997,CD; Digital,14 tracks; 42 min,Cinnamon Toast Records,Album featuring the song 'Scott Pilgrim'.,https://musicbrainz.org/release/0b298492,local:item_scott_song

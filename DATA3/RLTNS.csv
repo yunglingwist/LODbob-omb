@@ -1,0 +1,16 @@
+Subject,rel:lifePartnerOf,rel:ambivalentOf,rel:friendOf,rel:livesWith,rel:antagonistOf,org:memberOf
+local:char_scott_pilgrim,local:char_ramona_flowers,local:char_knives_chau;local:char_envy_adams;local:char_kim_pine,local:char_wallace_wells;local:char_stephen_stills;local:char_kim_pine;local:char_neil_nordegraf,local:char_wallace_wells,local:group_league_of_evil_exes,local:group_sex_bob_omb
+local:char_ramona_flowers,local:char_scott_pilgrim,local:group_league_of_evil_exes,local:char_wallace_wells;local:char_kim_pine,,,local:group_amazon
+local:char_knives_chau,local:char_neil_nordegraf,local:char_scott_pilgrim,local:char_kim_pine,,,
+local:char_envy_adams,local:char_todd_ingram,,,,,
+local:char_stephen_stills,,,local:char_neil_nordegraf;local:char_kim_pine;local:char_stephen_stills,,,local:group_sex_bob_omb
+local:char_kim_pine,,local:char_scott_pilgrim,local:char_knives_chau;local:char_wallace_wells;local:char_stephen_stills,,,local:group_sex_bob_omb
+local:char_neil_nordegraf,local:char_knives_chau,,local:char_knives_chau,,,local:group_sex_bob_omb
+local:char_wallace_wells,,,local:char_knives_chau;local:char_ramona_flowers,local:char_scott_pilgrim,,
+local:char_matthew_patel,,,,,,local:group_league_of_evil_exes
+local:char_lucas_lee,,,,,,local:group_league_of_evil_exes
+local:char_todd_ingram,local:char_envy_adams,,,,,local:group_league_of_evil_exes
+local:char_roxanne_richter,,,,,,local:group_league_of_evil_exes
+local:char_ken_katayanagi,,,,,,local:group_league_of_evil_exes
+local:char_kyle_katayanagi,,,,,,local:group_league_of_evil_exes
+local:char_gideon_graves,,,,,,local:group_league_of_evil_exes
