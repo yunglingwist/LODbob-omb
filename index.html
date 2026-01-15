@@ -95,7 +95,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Introduction</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>LODbobomb transforms the Scott Pilgrim transmedia universe into a machine-readable Linked Open Data knowledge graph. By connecting comics, film, music, games, and real-world cultural artifacts through RDF triples, we demonstrate how modern pop culture becomes semantic cultural heritage. Using Schema.org, Dublin Core, FOAF, Music Ontology, and OWL, our CSV datasets evolve into a unified .ttl graph where fictional characters link to their musical inspirations, actors, filming locations, and global identifiers.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -105,15 +105,8 @@
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <h3>About Scott Pilgrim</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+             The Scott Pilgrim universe spans graphic novels by Bryan Lee O'Malley (2004-2010), Edgar Wright's 2010 cult film, a retro Ubisoft game, 2023 Netflix anime, and indie rock influences like Plumtree's "Scott Pilgrim" track. Casa Loma castle in Toronto serves as a key filming location. This interconnected ecosystem—where comics inspire film, music shapes character identity, and real instruments appear in fiction—makes it perfect for semantic modeling across media formats and cultural domains. </p>
+           
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
@@ -257,62 +250,126 @@
 
       <!-- Contact Section -->
     <section id="contact" class="contact section">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Knowledge Organization</h2>
+  <p>From heterogeneous sources to structured model. We analyzed metadata from Wikidata, MusicBrainz, and fan documentation across 10+ entities (film, comics, soundtrack, Casa Loma, Rickenbacker bass). Theoretical model organizes via "Scott Pilgrim Universe" → Creators → Works → Locations → Time → Relationships. Formal conceptual model maps to Schema.org (CreativeWork), FRBRoo (Work/Manifestation), CIDOC (E24_PhysicalThing), with CSV tables prepared for RDF conversion.</p>
+  
+  <!-- Model Buttons Container -->
+  <div class="model-buttons">
+    <a href="knowledge-representation.html" class="model-btn">Theoretical Model</a>
+    <a href="knowledge-representation.html" class="model-btn">Conceptual Model</a>
+  </div>
+</div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Knowledge Organization</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-
-        </div>
-
-      </div>
+<style>
+.model-buttons { 
+  display: flex; 
+  gap: 20px; 
+  justify-content: center; 
+  margin: 30px auto; 
+  max-width: 600px; 
+  flex-wrap: wrap; 
+}
+.model-btn { 
+  display: inline-block; 
+  padding: 15px 30px; 
+  font-size: 1.1em; 
+  font-weight: 600; 
+  text-decoration: none; 
+  background: linear-gradient(135deg, #28a745, #20c997); 
+  color: white; 
+  border-radius: 30px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 15px rgba(40,167,69,0.3); 
+  min-width: 220px; 
+  text-align: center; 
+}
+.model-btn:hover { 
+  background: linear-gradient(135deg, #218838, #1ea085); 
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 25px rgba(40,167,69,0.4); 
+}
+@media (max-width: 768px) {
+  .model-buttons { flex-direction: column; align-items: center; }
+  .model-btn { min-width: 250px; }
+}
+</style>
 
     </section><!-- /Contact Section -->
 
- <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
 
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Knowledge Representation</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        <a href="#featured-services" class="btn-get-started">Explore</a>
-      </div><!-- End Section Title -->
+<!-- Knowledge Representation Section -->
+<section id="knowledge-rep" class="knowledge-rep section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Knowledge Representation</h2>
+    
+    <!-- Stacked Containers -->
+    <div class="kr-container" data-aos="fade-up" data-aos-delay="100">
+      <h4>Text Analysis</h4>
+      <p>One full-text screenplay sample encoded in TEI XML with Dublin Core metadata, capturing Scott's Casa Loma battle scene and character relationships for semantic markup.</p>
+    </div>
 
-      <div class="container">
+    <div class="kr-container" data-aos="fade-up" data-aos-delay="200">
+      <h4>RDF Production</h4>
+      <p>Python pipeline rdf_convert.py transforms all CSVs → RDF Turtle: URI minting (scottpilgrim.org/resource/), predicate mapping (DC/Schema/FOAF/MO), literal/resource typing. Modular processing handles characters (schema:FictionalCharacter), music (mo:MusicAlbum), instruments (crm:E24_PhysicalThing).</p>
+    </div>
 
-        <div class="row">
+    <div class="kr-container" data-aos="fade-up" data-aos-delay="300">
+      <h4>RDF Visualization</h4>
+      <p>RDF Grapher validates the knowledge graph: Gideon Graves (org:memberOf League of Evil Exes) → portrayed by Jason Schwartzman → part of Scott Pilgrim Universe. Unified scott_pilgrim_master.ttl connects 100+ triples across transmedia entities.</p>
+    </div>
 
-        </div>
+    <div style="text-align: center; margin: 40px 0;">
+      <a href="knowledge-representation.html" class="btn-get-started">View Details</a>
+    </div>
+  </div><!-- End Section Title -->
+</section><!-- /Knowledge Representation Section -->
 
-      </div>
-
-    </section><!-- /Faq Section -->
+<style>
+.knowledge-rep-section { padding: 60px 0; }
+.kr-container { 
+  background: white; 
+  padding: 30px; 
+  margin: 25px auto; 
+  max-width: 700px; 
+  border-radius: 15px; 
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+  text-align: left; 
+  border-top: 5px solid #1ea085; 
+  transition: all 0.4s ease; 
+}
+.kr-container:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 35px rgba(0,123,255,0.2); 
+}
+.kr-container h4 { 
+  color: #333; 
+  font-size: 1.4em; 
+  margin: 0 0 15px 0; 
+  font-weight: 700; 
+}
+.kr-container p { 
+  color: #555; 
+  font-size: 1.05em; 
+  line-height: 1.7; 
+  margin: 0; 
+}
+code { 
+  background: #f8f9fa; 
+  padding: 2px 6px; 
+  border-radius: 4px; 
+  font-family: 'Courier New', monospace; 
+  font-size: 0.95em; 
+  border: 1px solid #dee2e6; 
+}
+@media (max-width: 768px) {
+  .kr-container { margin: 20px 10px; padding: 25px 20px; }
+}
+</style>
     
 
   </main>
@@ -349,7 +406,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
