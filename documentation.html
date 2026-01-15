@@ -146,34 +146,6 @@ Our final collection was managed through a structured collaborative environment,
   </p>
 </div>
 
-<div class="container section-title" data-aos="fade-up">
-  <h2>From Heterogeneous Sources to RDF</h2>
-  
-  <p class="paragraph">
-    The primary objective and final technical milestone of this project was the transformation of heterogeneous data sources into a unified <strong>RDF format</strong>. Every object in our collection—whether stored in <strong>CSV</strong> or other digital formats—was systematically converted into a machine-readable Linked Data format.
-  </p><br>
-
-  <p class="paragraph">
-    To achieve this, we developed a robust <strong>Python-based pipeline</strong> (<em>rdf_convert.py</em>) tailored to the specific structure of each input file. The transformation process followed a rigorous methodology:
-  </p><br>
-
-  <ul class="paragraph">
-    <li><strong>URI Minting:</strong> Identifying and assigning unique subject URIs within the <em>https://scottpilgrim.org/resource/</em> namespace.</li>
-    <li><strong>Predicate Mapping:</strong> Aligning data fields with established ontologies such as Schema.org, FOAF, Dublin Core, Music Ontology, and Relationship Ontology.</li>
-    <li><strong>Data Typing:</strong> Carefully differentiating between <strong>Literals</strong> (names, years, descriptions) and <strong>Resources</strong> (linking to other internal URIs or external entities), ensuring compatibility with the domain and range of the chosen properties.</li>
-    <li><strong>Semantic Enrichment:</strong> Building contextual layers by connecting characters to their musical instruments, social relationships, and geographical locations.</li>
-  </ul><br>
-
-  <p class="paragraph">
-    For the majority of our datasets—including the Anime (ANIM), Characters (PPL), Instruments (GTR), and Soundtracks (SNDTRCK)—we utilized <strong>CSV format</strong> as the intermediary storage. The logic behind our Python transformation was modular: for each row, the script parsed the predicate, resolved it through a prefix mapping, and determined the object type. We ensured that all relevant namespaces were bound to the RDF graph for standardization and readability.
-  </p><br>
-
-  <p class="paragraph">
-    All resulting graphs were serialized in <strong>Turtle (.ttl)</strong> format. This format was chosen for its high human-readability and its clear representation of the <strong>Subject–Predicate–Object</strong> pattern, making the data easily queryable via SPARQL. The technical stack relied on <strong>RDFLib</strong> for graph construction and serialization, maintaining a shared structure across all scripts to ensure overall coherence.
-  </p>
-
-  
-</div>
 
 <div class="container section-title" data-aos="fade-up">
   <h2>Conclusions</h2>
