@@ -41,27 +41,28 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#hero"><span>Home</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#drop">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Items</a></li>
+              <li><a href="#team">Team</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="knowledge-organization.html"><span>Knowledge Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#metadata analysis">Metadata Analysis</a></li>
+              <li><a href="#theoretical model">Theoretical Model</a></li>
+              <li><a href="#conceptual model">Conceptual Model</a></li>
             </ul>
           </li>
+          <li class="dropdown"><a href="knowledge-representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#text analysis">Text Analysis</a></li>
+              <li><a href="#rdf production">RDF Production</a></li>
+              <li><a href="#rdf visualization">RDF Visualization</a></li>
+            </ul>
+          </li>
+          <li><a href="documentation.html">Documentation</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -79,8 +80,8 @@
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
           <div class="carousel-container">
-            <h2>We are professional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>the LODbob-omb Project</h2>
+            <p>LODbob-omb is a Linked Open Data project representing and organizing knowledge about Scott Pilgrim in a structured way.</p>
             <a href="#featured-services" class="btn-get-started">Get Started</a>
           </div>
         </div><!-- End Carousel Item -->
@@ -89,53 +90,12 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section dark-background">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title">Lorem Ipsum</h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title">Dolor Sitema</h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title">Sed ut perspiciatis</h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Featured Services Section -->
-
     <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
+        <h2>Introduction</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -144,8 +104,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">Who We Are</p>
-            <h3>Unleashing Potential with Creative Strategy</h3>
+            <h3>About Scott Pilgrim</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -165,43 +124,14 @@
       </div>
     </section><!-- /About Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
+   
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Items</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>List of items we have chosen to represent knowledge about Scott Pilgrim.</p>
       </div><!-- End Section Title -->
 
        <div class="container">
@@ -321,25 +251,12 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
       <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2>Knowledge Organization</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -353,24 +270,32 @@
 
     </section><!-- /Contact Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+ <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      <img src="assets/img/cta-bg.jpg" alt="">
 
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </section><!-- /Pricing Section -->
+    </section><!-- /Call To Action Section -->
+
 
     <!-- Faq Section -->
     <section id="faq" class="faq section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
+        <h2>Knowledge Representation</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -404,8 +329,8 @@
                 <div class="member-info-content">
                   <h4>Atakan Kayi</h4>
                   <div class="social">
-                    <a href=""><i class="bi bi-github"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/GrandTuvalet"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atakantitan/"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -419,8 +344,8 @@
                 <div class="member-info-content">
                   <h4>Ceyda Uyar</h4>
                   <div class="social">
-                    <a href=""><i class="bi bi-github"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/yunglingwist"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ceydauyar/"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -434,8 +359,8 @@
                 <div class="member-info-content">
                   <h4>Yigit Ak</h4>
                   <div class="social">
-                    <a href=""><i class="bi bi-github"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/yigittakk"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yigittakk/"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -456,10 +381,10 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright 2026</span> <strong class="px-1 sitename">LODbob-omb</strong> </p>
       <div class="social-links d-flex justify-content-center mt-4">
-            <a href=""><i class="bi bi-github-lod"></i></a>
-            <a href=""><i class="bi bi-github-atakan"></i></a>
-            <a href=""><i class="bi bi-github-ceyda"></i></a>
-            <a href=""><i class="bi bi-github-yigit"></i></a>
+            <a href="https://github.com/yunglingwist/LODbob-omb"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/GrandTuvalet"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/yunglingwist"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/yigittakk"><i class="bi bi-github"></i></a>
           </div>
       
       <div class="credits">
