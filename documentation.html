@@ -75,12 +75,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/bg.jpg);">
       <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>Documentation</h1>
+        <p class="paragraph">This project was developed for the Information Science and Cultural Heritage course within the University of Bologna's Master's degree program in Digital Humanities and Digital Knowledge. Its core purpose is to semantically link various cultural and media objects related to the Scott Pilgrim universe on the web using RDF, with the overarching goal of contributing to the preservation and enhanced accessibility of modern cultural heritage.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Documentation</li>
           </ol>
         </nav>
       </div>
@@ -91,13 +91,107 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Scott-Pilgrim-LOD: Linked Open Data for Multimedia Cultural Heritage</h2>
+        <p class="paragraph">As our team shares a deep fascination with contemporary transmedia storytelling and the intersection of different pop-culture mediums, we were naturally drawn to selecting a theme that bridges graphic novels, cinema, and music. Among several candidates, the Scott Pilgrim universe stood out for its unique narrative structure and its profound impact on global youth culture.
+
+The Scott Pilgrim franchise is far more than a simple story about a protagonist and his relationships. It embodies a complex ecosystem of transmedia adaptations, where the original Canadian graphic novels, the cult-classic film directed by Edgar Wright, the retro-style video game, and the recent anime production interweave. This interconnectedness makes it an ideal subject for semantic modeling and Linked Open Data, where meaningful connections between diverse entities—such as fictional characters, the real-world actors who portray them, and the musical inspirations that define their world—can be expressed and visualized.
+
+Additionally, because the Scott Pilgrim universe has been extensively documented in both fan-driven wikis and official international databases like Wikidata, it allows for the integration of existing open data resources. By mapping these resources using RDF, we can explore how a single creative work evolves across different platforms. This project supports both the preservation and the reinterpretation of modern digital heritage through semantic tools, highlighting the cultural significance of 21st-century multimedia narratives.</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+      <div class="container section-title" data-aos="fade-up">
+         <h2>Item Selections: Mapping a Multi-Centered Ecosystem</h2>
+        <p class="paragraph">The item selection process was not designed as a linear extraction from a single source, but rather as an exploration of a multimedia ecosystem. While the Scott Pilgrim narrative is widely known, we realized that its cultural value lies in the "dialogue" between different formats. Therefore, our selection reflects a non-centralized approach, where we curated items that represent the intersections of comics, cinema, music, and real-world geography.
+During our brainstorming sessions, we moved beyond the plot-driven elements to include "peripheral" yet semantically rich entities. We were drawn to the indie rock heritage of the 90s, Canadian architectural landmarks, and the material culture of musical gear. This led to a diverse collection where a real-world guitar (like the Rickenbacker 4003) or a real band (like Plumtree) holds as much semantic weight as a fictional character. These selections allowed us to build a Knowledge Graph that bridges the gap between fictional lore and real-world cultural heritage.
+To identify and validate these items, we conducted research across institutional and open data collections such as Wikidata, DBpedia, and MusicBrainz. We used ChatGPT to assist in cross-referencing metadata across these platforms, helping us identify objects that already possessed stable identifiers (URIs). This was crucial for ensuring that our digital collection was not just a list of items, but a set of nodes ready for Linked Open Data (LOD) integration.
+Our final collection was managed through a structured collaborative environment, prioritizing items that offered the highest relational potential. For example, selecting Casa Loma as a landmark allowed us to link the fictional "Evil Ex" movie set back to a tangible historical site in Toronto. This methodology ensured that our project captures the transmedia fluidity of the theme, where information flows freely between the textual descriptions in the scripts, the visual representation in the anime, and the material reality of the objects themselves.</p>
+      
       </div>
+
+      <div class="container section-title" data-aos="fade-up">
+         <h2>Metadata Analysis: Extracting Meaningful Information</h2>
+        <p class="paragraph">This phase of the project focuses on unraveling the hidden connections within the Scott Pilgrim ecosystem, a multifaceted cultural phenomenon. Unlike traditional heritage projects centered on institutional archives, our research addresses a modern transmedia narrative that seamlessly bridges graphic novels, cinematic productions, digital games, and musical subcultures.</p><br>
+<p class="paragraph">For our core media entities—comprising the Anime series (ANIM), the Live-action film (SCTT_MV), and the Video game (VDGM)—we synthesized data from diverse open-knowledge platforms and digital fan-curated documentations. Since these sources often lack a singular, unified standard, we established Schema.org as our primary conceptual framework. This allowed us to map heterogeneous production details, such as directors, screenwriters, and genres, into a consistent categorical structure that treats different media formats as part of a single expressive continuum.</p><br>
+ <p class="paragraph">A distinctive feature of our project is the modeling of Musical and Material culture. For entities like the band Plumtree (the real-world inspiration for the franchise) and iconic musical gear (e.g., the Rickenbacker 4003 bass guitar), we moved beyond generic descriptors. By integrating the Music Ontology (MO) and FOAF (Friend of a Friend), we moved from simple labeling to technical definitions of musical performance and identity. This approach allowed us to formally define how a fictional character relates to real-world musical genres and instruments.</p><br>
+<p class="paragraph">For geographical entities, such as the Toronto landmark Casa Loma (CSLM), and documentary objects like movie scripts, we adopted Dublin Core (DCTERMS). This choice ensured that physical locations and digital textual formats were described using a standard compatible with global archival protocols, emphasizing spatial and formal properties.</p><br>
+<p class="paragraph">All identified entities were organized into 14 structured CSV files, which were subsequently processed through a custom Python-based workflow to generate RDF triples. This process not only cleaned the raw data but also redefined the semantic relationships (Subject-Predicate-Object) to match the project's vision of a highly interconnected transmedia graph.
+</p><br>
+      
+      </div>
+
+      <div class="container section-title" data-aos="fade-up">
+  <h2>Metadata Standards</h2>
+  <p class="paragraph">
+    The selection of metadata standards was driven by the principle of <strong>interoperability</strong>, ensuring that our dataset can "speak" to other systems within the Linked Open Data (LOD) cloud. By leveraging a multi-ontology approach, we were able to capture the specific nuances of the Scott Pilgrim universe:
+  </p><br>
+
+  <p class="paragraph">
+    <strong>Schema.org:</strong> This serves as the "Creative Work" backbone of the project. It is used to define the relationships between different adaptations (<em>schema:isBasedOn</em>) and to capture the roles of contributors within the ANIM, SCTT_MV, and CMC datasets.
+  </p><br>
+
+  <p class="paragraph">
+    <strong>Dublin Core (DCTERMS):</strong> Implemented across all datasets to standardize foundational metadata such as titles, identifiers, and formats. It ensures our data aligns with international digital archiving standards for long-term discovery.
+  </p><br>
+
+  <p class="paragraph">
+    <strong>FOAF & Relationship Ontology (REL):</strong> Applied to the PPL and RLTNS files to move beyond static descriptions. These standards model the complex network of the characters, using semantic properties like <em>rel:friendOf</em> and <em>rel:antagonistOf</em> to create a dynamic social network.
+  </p><br>
+
+  <p class="paragraph">
+    <strong>Music Ontology (MO) & Organization Ontology (ORG):</strong> These standards capture the "indie rock" spirit of the theme. They link characters to musical collectives (<em>org:memberOf</em>) and define the technical attributes of the instruments and soundtracks used within the story.
+  </p><br>
+
+  <p class="paragraph">
+    <strong>OWL (Web Ontology Language):</strong> To ensure our project contributes to the global web of data, we utilized the <em>owl:sameAs</em> property. This links our internal resources to external authoritative hubs like Wikidata and DBpedia, making our data discoverable and semantically linked to the wider world.
+  </p>
+</div>
+
+<div class="container section-title" data-aos="fade-up">
+  <h2>From Heterogeneous Sources to RDF</h2>
+  
+  <p class="paragraph">
+    The primary objective and final technical milestone of this project was the transformation of heterogeneous data sources into a unified <strong>RDF format</strong>. Every object in our collection—whether stored in <strong>CSV</strong> or other digital formats—was systematically converted into a machine-readable Linked Data format.
+  </p><br>
+
+  <p class="paragraph">
+    To achieve this, we developed a robust <strong>Python-based pipeline</strong> (<em>rdf_convert.py</em>) tailored to the specific structure of each input file. The transformation process followed a rigorous methodology:
+  </p><br>
+
+  <ul class="paragraph">
+    <li><strong>URI Minting:</strong> Identifying and assigning unique subject URIs within the <em>https://scottpilgrim.org/resource/</em> namespace.</li>
+    <li><strong>Predicate Mapping:</strong> Aligning data fields with established ontologies such as Schema.org, FOAF, Dublin Core, Music Ontology, and Relationship Ontology.</li>
+    <li><strong>Data Typing:</strong> Carefully differentiating between <strong>Literals</strong> (names, years, descriptions) and <strong>Resources</strong> (linking to other internal URIs or external entities), ensuring compatibility with the domain and range of the chosen properties.</li>
+    <li><strong>Semantic Enrichment:</strong> Building contextual layers by connecting characters to their musical instruments, social relationships, and geographical locations.</li>
+  </ul><br>
+
+  <p class="paragraph">
+    For the majority of our datasets—including the Anime (ANIM), Characters (PPL), Instruments (GTR), and Soundtracks (SNDTRCK)—we utilized <strong>CSV format</strong> as the intermediary storage. The logic behind our Python transformation was modular: for each row, the script parsed the predicate, resolved it through a prefix mapping, and determined the object type. We ensured that all relevant namespaces were bound to the RDF graph for standardization and readability.
+  </p><br>
+
+  <p class="paragraph">
+    All resulting graphs were serialized in <strong>Turtle (.ttl)</strong> format. This format was chosen for its high human-readability and its clear representation of the <strong>Subject–Predicate–Object</strong> pattern, making the data easily queryable via SPARQL. The technical stack relied on <strong>RDFLib</strong> for graph construction and serialization, maintaining a shared structure across all scripts to ensure overall coherence.
+  </p>
+
+  
+</div>
+
+<div class="container section-title" data-aos="fade-up">
+  <h2>Conclusions</h2>
+  
+  <p class="paragraph">
+    This project demonstrates that transforming heterogeneous media data into <strong>RDF</strong> is more than a technical task; it is an exercise in <strong>knowledge construction</strong>. By explicitly modeling the relationships between a fictional narrative and its real-world cultural context, we have shifted from isolated data points to a rich semantic network that supports discovery, reuse, and long-term digital preservation.
+  </p><br>
+
+  <p class="paragraph">
+    The evolution of the web from a document-centric system to a <strong>Web of Data—the Semantic Web</strong>—highlights the importance of graph structures. These models allow machines to interpret the "meaning" and context of information. By applying these principles to the Scott Pilgrim universe, we have shown how contemporary popular culture can be curated with the same scholarly rigor as traditional cultural heritage objects.
+  </p><br>
+
+  <p class="paragraph">
+    Major platforms and knowledge engines now rely on these graph-based paradigms to enhance content understanding and discoverability. In the <strong>LAM (Libraries, Archives, Museums) environment</strong>, structuring data as linked graphs makes cultural narratives meaningfully discoverable by hem humans and algorithms, ensuring that the dynamic network of transmedia meanings continues to evolve.
+  </p>
+</div>
+
+
 
     </section><!-- /Starter Section Section -->
 <!-- Team Section -->
@@ -106,7 +200,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container">
