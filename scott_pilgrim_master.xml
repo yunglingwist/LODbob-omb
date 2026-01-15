@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:schema="https://schema.org/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rel="http://purl.org/vocab/relationship/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:mo="http://purl.org/ontology/mo/"
+  xmlns:org="http://www.w3.org/ns/org#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="http://schema.org/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+>
+  <schema:VideoGame rdf:about="https://scottpilgrim.org/resource/media_game">
+    <dcterms:identifier rdf:resource="https://www.wikidata.org/wiki/Q2080333"/>
+    <dcterms:title>Scott Pilgrim vs. The World The Game</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:gamePlatform>Nintendo Switch</schema:gamePlatform>
+    <schema:gamePlatform>PC</schema:gamePlatform>
+    <schema:gamePlatform>PlayStation</schema:gamePlatform>
+    <schema:gamePlatform>Xbox</schema:gamePlatform>
+    <schema:genre>Beat 'em up</schema:genre>
+    <schema:isBasedOn>
+      <schema:ComicSeries rdf:about="https://scottpilgrim.org/resource/media_comic_series">
+        <dcterms:identifier rdf:resource="https://www.wikidata.org/wiki/Q1199291"/>
+        <dcterms:title>Scott Pilgrim (Graphic Novels)</dcterms:title>
+        <schema:author>Bryan Lee O'Malley</schema:author>
+        <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:endDate>
+        <schema:genre>Action</schema:genre>
+        <schema:genre>Comedy</schema:genre>
+        <schema:genre>Fantasy</schema:genre>
+        <schema:genre>Romance</schema:genre>
+        <schema:numberOfVolumes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</schema:numberOfVolumes>
+        <schema:publisher>Oni Press</schema:publisher>
+        <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</schema:startDate>
+      </schema:ComicSeries>
+    </schema:isBasedOn>
+    <schema:publisher>Ubisoft</schema:publisher>
+  </schema:VideoGame>
+  <mo:Instrument rdf:about="https://scottpilgrim.org/resource/item_bass_guitar">
+    <dcterms:description>Scott Pilgrim's main instrument.</dcterms:description>
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q922217"/>
+    <foaf:name>Rickenbacker 4001 Bass</foaf:name>
+    <schema:brand>Rickenbacker</schema:brand>
+    <schema:color>Fireglo Red</schema:color>
+    <schema:material>Bound maple</schema:material>
+    <schema:material>Rosewood</schema:material>
+    <schema:material>Wallnut</schema:material>
+    <schema:ownedBy>
+      <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_scott_pilgrim">
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+        <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/char_envy_adams"/>
+        <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/char_kim_pine"/>
+        <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/char_knives_chau"/>
+        <rel:antagonistOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_kim_pine"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_neil_nordegraf"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_stephen_stills"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_wallace_wells"/>
+        <rel:lifePartnerOf rdf:resource="https://scottpilgrim.org/resource/char_ramona_flowers"/>
+        <rel:livesWith rdf:resource="https://scottpilgrim.org/resource/char_wallace_wells"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q6122585"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+        <foaf:name>Scott Pilgrim</foaf:name>
+        <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Scott_Pilgrim"/>
+        <schema:portrayedBy rdf:resource="https://scottpilgrim.org/resource/person_michael_cera"/>
+        <schema:roleName>Protagonist</schema:roleName>
+      </schema:FictionalCharacter>
+    </schema:ownedBy>
+    <schema:productionDate>1961-1981</schema:productionDate>
+  </mo:Instrument>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_gideon_graves">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf>
+      <foaf:Organization rdf:about="https://scottpilgrim.org/resource/group_league_of_evil_exes">
+        <dcterms:description>An organization of Ramona Flowers' seven evil exes.</dcterms:description>
+        <owl:sameAs rdf:resource="https://scottpilgrim.fandom.com/wiki/League_of_Evil_Exes"/>
+        <foaf:name>League of Evil Exes</foaf:name>
+      </foaf:Organization>
+    </org:memberOf>
+    <foaf:name>Gideon Graves</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Gideon_Graves"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_jason_schwartzman">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q313705"/>
+        <foaf:name>Jason Schwartzman</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_roxanne_richter">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+    <foaf:name>Roxanne Richter</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Roxie_Richter"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_mae_whitman">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q232307"/>
+        <foaf:name>Mae Whitman</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_ken_katayanagi">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+    <foaf:name>Ken Katayanagi</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Ken_Katayanagi"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_shota_saito">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q11500347"/>
+        <foaf:name>Shota Saito</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_threshold">
+    <dcterms:format>Digital</dcterms:format>
+    <dcterms:isPartOf>
+      <schema:MusicAlbum rdf:about="https://scottpilgrim.org/resource/item_soundtrack">
+        <dcterms:format>CD</dcterms:format>
+        <dcterms:format>Digital</dcterms:format>
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/media_movie"/>
+        <dcterms:title>Scott Pilgrim vs. the World (Original Soundtrack)</dcterms:title>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q127699552"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q7437073"/>
+        <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+        <schema:genre>Indie Rock</schema:genre>
+        <schema:producer>Nigel Godrich</schema:producer>
+      </schema:MusicAlbum>
+    </dcterms:isPartOf>
+    <dcterms:title>Threshold</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:genre>Fuzz</schema:genre>
+    <schema:genre>Garage Rock</schema:genre>
+    <schema:performer>
+      <mo:MusicGroup rdf:about="https://scottpilgrim.org/resource/group_sex_bob_omb">
+        <dcterms:description>Indie rock band featuring Scott Pilgrim.</dcterms:description>
+        <owl:sameAs rdf:resource="https://scottpilgrim.fandom.com/wiki/Sex_Bob-Omb"/>
+        <foaf:name>Sex Bob-Omb</foaf:name>
+      </mo:MusicGroup>
+    </schema:performer>
+  </schema:MusicRecording>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_kyle_katayanagi">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+    <foaf:name>Kyle Katayanagi</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Kyle_Katayanagi"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_keita_saito">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q137067984"/>
+        <foaf:name>Keita Saito</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_summertime">
+    <dcterms:format>Digital</dcterms:format>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/item_soundtrack"/>
+    <dcterms:title>Summertime</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:genre>Garage Rock</schema:genre>
+    <schema:performer rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+  </schema:MusicRecording>
+  <schema:CreativeWork rdf:about="https://scottpilgrim.org/resource/item_screenplay">
+    <dcterms:format>PDF/Text</dcterms:format>
+    <dcterms:isPartOf>
+      <ns1:Movie rdf:about="https://scottpilgrim.org/resource/media_movie">
+        <dcterms:identifier rdf:resource="https://www.wikidata.org/wiki/Q753899"/>
+        <dcterms:title>Scott Pilgrim vs. the World</dcterms:title>
+        <schema:actor rdf:resource="http://www.wikidata.org/entity/Q207873"/>
+        <schema:actor rdf:resource="http://www.wikidata.org/entity/Q309555"/>
+        <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+        <schema:director rdf:resource="http://www.wikidata.org/entity/Q522023"/>
+        <schema:duration>112 Minutes</schema:duration>
+        <schema:genre>Action</schema:genre>
+        <schema:genre>Adventure</schema:genre>
+        <schema:genre>Comedy</schema:genre>
+        <schema:isBasedOn rdf:resource="https://scottpilgrim.org/resource/media_comic_series"/>
+        <schema:locationCreated rdf:resource="https://scottpilgrim.org/resource/item_casa_loma"/>
+        <schema:musicBy rdf:resource="https://scottpilgrim.org/resource/item_soundtrack"/>
+        <schema:productionCompany>Big Talk Productions</schema:productionCompany>
+        <schema:productionCompany>Marc Platt Productions</schema:productionCompany>
+        <schema:screenwriter>Edgar Wright</schema:screenwriter>
+        <schema:screenwriter>Michael Bacall</schema:screenwriter>
+      </ns1:Movie>
+    </dcterms:isPartOf>
+    <dcterms:language>English</dcterms:language>
+    <dcterms:title>Scott Pilgrim vs. the World (Screenplay)</dcterms:title>
+    <owl:sameAs rdf:resource="https://imsdb.com/scripts/Scott-Pilgrim-vs-the-World.html"/>
+    <schema:author>Edgar Wright</schema:author>
+    <schema:author>Michael Bacall</schema:author>
+    <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</schema:dateCreated>
+  </schema:CreativeWork>
+  <schema:TVSeries rdf:about="https://scottpilgrim.org/resource/media_anime">
+    <dcterms:identifier rdf:resource="https://www.wikidata.org/wiki/Q117351362"/>
+    <dcterms:title>Scott Pilgrim Takes Off</dcterms:title>
+    <schema:broadcaster>Netflix</schema:broadcaster>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</schema:datePublished>
+    <schema:director>Abel Góngora</schema:director>
+    <schema:genre>Action</schema:genre>
+    <schema:genre>Adventure</schema:genre>
+    <schema:genre>Comedy</schema:genre>
+    <schema:genre>Fantasy</schema:genre>
+    <schema:isBasedOn rdf:resource="https://scottpilgrim.org/resource/media_comic_series"/>
+    <schema:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</schema:numberOfEpisodes>
+    <schema:numberOfSeasons rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</schema:numberOfSeasons>
+    <schema:productionCompany>Science SARU</schema:productionCompany>
+    <schema:productionCompany>UCP</schema:productionCompany>
+    <schema:screenwriter>BenDavid Grabinski</schema:screenwriter>
+    <schema:screenwriter>Bryan Lee O'Malley</schema:screenwriter>
+  </schema:TVSeries>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_we_are_sex_bob_omb">
+    <dcterms:format>Digital</dcterms:format>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/item_soundtrack"/>
+    <dcterms:title>We Are Sex Bob-Omb</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:genre>Garage Rock</schema:genre>
+    <schema:genre>Punk</schema:genre>
+    <schema:performer rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+  </schema:MusicRecording>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_matthew_patel">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+    <foaf:name>Matthew Patel</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Matthew_Patel"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_satya_bhabha">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q7426855"/>
+        <foaf:name>Satya Bhabha</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_stephen_stills">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <rel:friendOf>
+      <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_kim_pine">
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+        <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/char_scott_pilgrim"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_knives_chau"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_stephen_stills"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_wallace_wells"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q133862338"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+        <foaf:name>Kim Pine</foaf:name>
+        <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Kim_Pine"/>
+        <schema:portrayedBy rdf:resource="https://scottpilgrim.org/resource/person_alison_pill"/>
+        <schema:roleName>Support</schema:roleName>
+      </schema:FictionalCharacter>
+    </rel:friendOf>
+    <rel:friendOf>
+      <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_neil_nordegraf">
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_knives_chau"/>
+        <rel:lifePartnerOf rdf:resource="https://scottpilgrim.org/resource/char_knives_chau"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+        <foaf:name>Neil Nordegraf</foaf:name>
+        <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Neil"/>
+        <schema:portrayedBy rdf:resource="https://scottpilgrim.org/resource/person_johnny_simmons"/>
+        <schema:roleName>Support</schema:roleName>
+      </schema:FictionalCharacter>
+    </rel:friendOf>
+    <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_stephen_stills"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+    <foaf:name>Stephen Stills</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Stephen_Stills"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_mark_webber">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1378842"/>
+        <foaf:name>Mark Webber</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Support</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_scott_pilgrim">
+    <dcterms:description>The song that inspired the character name.</dcterms:description>
+    <dcterms:isPartOf>
+      <schema:MusicAlbum rdf:about="https://scottpilgrim.org/resource/item_plumtree">
+        <dcterms:description>Album featuring the song 'Scott Pilgrim'.</dcterms:description>
+        <dcterms:extent>14 tracks</dcterms:extent>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1997</dcterms:issued>
+        <dcterms:medium>CD</dcterms:medium>
+        <dcterms:title>Predicts the Future</dcterms:title>
+        <mo:genre>Indie Rock</mo:genre>
+        <mo:performer rdf:resource="https://www.wikidata.org/wiki/Q7205485"/>
+        <mo:publisher>Cinnamon Toast Records</mo:publisher>
+        <owl:sameAs rdf:resource="https://musicbrainz.org/release/0b298492"/>
+      </schema:MusicAlbum>
+    </dcterms:isPartOf>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1997</dcterms:issued>
+    <dcterms:medium>Digital</dcterms:medium>
+    <dcterms:title>Scott Pilgrim (Song)</dcterms:title>
+    <mo:genre>Indie Rock</mo:genre>
+    <mo:performer rdf:resource="https://www.wikidata.org/wiki/Q7205485"/>
+    <mo:publisher>Cinnamon Toast Records</mo:publisher>
+  </schema:MusicRecording>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_black_sheep">
+    <dcterms:format>Digital</dcterms:format>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/item_soundtrack"/>
+    <dcterms:title>Black Sheep</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:genre>Indie Rock</schema:genre>
+    <schema:performer>
+      <mo:MusicGroup rdf:about="https://scottpilgrim.org/resource/group_clash_at_demonhead">
+        <dcterms:description>Famous rock band led by Envy Adams.</dcterms:description>
+        <owl:sameAs rdf:resource="https://scottpilgrim.fandom.com/wiki/The_Clash_at_Demonhead"/>
+        <foaf:name>The Clash at Demonhead</foaf:name>
+      </mo:MusicGroup>
+    </schema:performer>
+  </schema:MusicRecording>
+  <schema:MusicRecording rdf:about="https://scottpilgrim.org/resource/item_song_garbage_truck">
+    <dcterms:format>Digital</dcterms:format>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/item_soundtrack"/>
+    <dcterms:title>Garbage Truck</dcterms:title>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:datePublished>
+    <schema:genre>Garage Rock</schema:genre>
+    <schema:performer rdf:resource="https://scottpilgrim.org/resource/group_sex_bob_omb"/>
+  </schema:MusicRecording>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_lucas_lee">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+    <foaf:name>Lucas Lee</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Lucas_Lee"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_chris_evans">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q178348"/>
+        <foaf:name>Chris Evans</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Antagonist</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:ImageObject rdf:about="https://scottpilgrim.org/resource/item_movie_poster">
+    <dcterms:format>Image/JPEG</dcterms:format>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/media_movie"/>
+    <dcterms:title>Theatrical Release Poster</dcterms:title>
+    <schema:creator>Empire Design</schema:creator>
+    <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</schema:dateCreated>
+    <schema:url rdf:resource="https://upload.wikimedia.org/wikipedia/en/1/14/Scott_Pilgrim_vs._the_World_teaser.jpg"/>
+  </schema:ImageObject>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_knives_chau">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/char_scott_pilgrim"/>
+    <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_kim_pine"/>
+    <rel:lifePartnerOf rdf:resource="https://scottpilgrim.org/resource/char_neil_nordegraf"/>
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q5960245"/>
+    <foaf:name>Knives Chau</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Knives_Chau"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_ellen_wong">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q388843"/>
+        <foaf:name>Ellen Wong</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Support</schema:roleName>
+  </schema:FictionalCharacter>
+  <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_alison_pill">
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q237781"/>
+    <foaf:name>Alison Pill</foaf:name>
+    <schema:roleName>Actor</schema:roleName>
+  </foaf:Person>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_wallace_wells">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_knives_chau"/>
+    <rel:friendOf>
+      <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_ramona_flowers">
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+        <rel:ambivalentOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_kim_pine"/>
+        <rel:friendOf rdf:resource="https://scottpilgrim.org/resource/char_wallace_wells"/>
+        <rel:lifePartnerOf rdf:resource="https://scottpilgrim.org/resource/char_scott_pilgrim"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q6099320"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_amazon"/>
+        <foaf:name>Ramona Flowers</foaf:name>
+        <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Ramona_Flowers"/>
+        <schema:portrayedBy rdf:resource="https://scottpilgrim.org/resource/person_mary_winstead"/>
+        <schema:roleName>Protagonist</schema:roleName>
+      </schema:FictionalCharacter>
+    </rel:friendOf>
+    <rel:livesWith rdf:resource="https://scottpilgrim.org/resource/char_scott_pilgrim"/>
+    <foaf:name>Wallace Wells</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Wallace"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_kieran_culkin">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q313204"/>
+        <foaf:name>Kieran Culkin</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Support</schema:roleName>
+  </schema:FictionalCharacter>
+  <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_envy_adams">
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <rel:lifePartnerOf>
+      <schema:FictionalCharacter rdf:about="https://scottpilgrim.org/resource/char_todd_ingram">
+        <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+        <rel:lifePartnerOf rdf:resource="https://scottpilgrim.org/resource/char_envy_adams"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_clash_at_demonhead"/>
+        <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_league_of_evil_exes"/>
+        <foaf:name>Todd Ingram</foaf:name>
+        <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Todd_Ingram"/>
+        <schema:portrayedBy rdf:resource="https://scottpilgrim.org/resource/person_brandon_routh"/>
+        <schema:roleName>Antagonist</schema:roleName>
+      </schema:FictionalCharacter>
+    </rel:lifePartnerOf>
+    <org:memberOf rdf:resource="https://scottpilgrim.org/resource/group_clash_at_demonhead"/>
+    <foaf:name>Envy Adams</foaf:name>
+    <foaf:page rdf:resource="https://scottpilgrim.fandom.com/wiki/Envy_Adams"/>
+    <schema:portrayedBy>
+      <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_brie_larson">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q29328"/>
+        <foaf:name>Brie Larson</foaf:name>
+        <schema:roleName>Actor</schema:roleName>
+      </foaf:Person>
+    </schema:portrayedBy>
+    <schema:roleName>Support</schema:roleName>
+  </schema:FictionalCharacter>
+  <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_johnny_simmons">
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q116636"/>
+    <foaf:name>Johnny Simmons</foaf:name>
+    <schema:roleName>Actor</schema:roleName>
+  </foaf:Person>
+  <schema:LandmarksOrHistoricalBuildings rdf:about="https://scottpilgrim.org/resource/item_casa_loma">
+    <dcterms:description>Gothic Revival style mansion in Toronto. Setting for Lucas Lee's movie shoot and battle with Scott Pilgrim.</dcterms:description>
+    <dcterms:isPartOf rdf:resource="https://scottpilgrim.org/resource/universe_scott_pilgrim"/>
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q1046446"/>
+    <foaf:name>Casa Loma</foaf:name>
+    <schema:address>1 Austin Terrace Toronto Ontario Canada</schema:address>
+    <schema:architect>E. J. Lennox</schema:architect>
+    <schema:dateCreated>1911-1914</schema:dateCreated>
+  </schema:LandmarksOrHistoricalBuildings>
+  <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_michael_cera">
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q309555"/>
+    <foaf:name>Michael Cera</foaf:name>
+    <schema:roleName>Actor</schema:roleName>
+  </foaf:Person>
+  <foaf:Organization rdf:about="https://scottpilgrim.org/resource/group_amazon">
+    <dcterms:description>Delivery company employing Ramona Flowers.</dcterms:description>
+    <foaf:name>Amazon.ca</foaf:name>
+  </foaf:Organization>
+  <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_brandon_routh">
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q299324"/>
+    <foaf:name>Brandon Routh</foaf:name>
+    <schema:roleName>Actor</schema:roleName>
+  </foaf:Person>
+  <foaf:Person rdf:about="https://scottpilgrim.org/resource/person_mary_winstead">
+    <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q207873"/>
+    <foaf:name>Mary Elizabeth Winstead</foaf:name>
+    <schema:roleName>Actor</schema:roleName>
+  </foaf:Person>
+</rdf:RDF>
