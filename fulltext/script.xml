@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Scott Pilgrim vs. the World - Casa Loma Scene (Scene 64/65)</title>
+            <author>Edgar Wright</author>
+            <author>Michael Bacall</author>
+            <respStmt>
+               <resp>Encoded by</resp>
+               <name>Student Researcher</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>University Digital Humanities Project</publisher>
+            <date>2025</date>
+            <availability>
+               <p>Educational use only. Encoded for academic analysis.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Scott Pilgrim vs. the World Shooting Script</title>
+               <date>2010</date>
+               <note>Scene 64 and 65: Lucas Lee Fight Sequence</note>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      
+      <encodingDesc>
+         <projectDesc>
+            <p>This project aims to explore the narrative structure, character interactions, and transmedia connections in the film adaptation of Scott Pilgrim vs. the World through semantic encoding and network analysis.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>The text has been encoded maintaining the original screenplay format. Character names, stage directions, and dialogue have been structurally distinguished. Entities such as characters and locations have been linked to an external Knowledge Graph using 'sameAs' and 'ref' attributes.</p>
+         </editorialDecl>
+      </encodingDesc>
+      
+      <profileDesc>
+         <particDesc>
+             <listPerson>
+               <person xml:id="scott" sameAs="local:char_scott_pilgrim">
+                   <persName>Scott Pilgrim</persName>
+               </person>
+               <person xml:id="ramona" sameAs="local:char_ramona_flowers">
+                   <persName>Ramona Flowers</persName>
+               </person>
+               <person xml:id="wallace" sameAs="local:char_wallace_wells">
+                   <persName>Wallace Wells</persName>
+               </person>
+               <person xml:id="lucas" sameAs="local:char_lucas_lee">
+                   <persName>Lucas Lee</persName>
+               </person>
+               <person xml:id="first_ad">
+                   <persName>First A.D.</persName>
+               </person>
+               <person xml:id="winifred">
+                   <persName>Winifred Hailey</persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   
+   <text>
+      <body>
+         <div type="scene" n="64">
+            <head>EXT. CASA LOMA - CONTINUOUS</head>
+            
+            <stage type="setting" ref="local:item_casa_loma">
+               A crew readies a shot of <name ref="#winifred">WINIFRED HAILEY</name> held hostage by
+               some GOON. A STAND IN takes the place of the leading man.
+               <name ref="#scott">Scott</name> and <name ref="#ramona">Ramona</name> approach some SPECTATORS, including
+               <name ref="#wallace">Wallace</name>.
+            </stage>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>Did you find the guy you’re stalking?</p>
+            </sp>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <p>I think I’m about to right now.</p>
+            </sp>
+
+            <sp who="#first_ad">
+               <speaker>FIRST A.D.</speaker>
+               <p>Mr. Lee is travelling!</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>Mr. Lee?</p>
+            </sp>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <p>Lucas Lee.</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>Ooh.</p>
+            </sp>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>Ooh?</p>
+            </sp>
+
+            <stage type="entrance" who="#lucas">
+               The UNIVERSAL STUDIOS FANFARE announces <name ref="#lucas">LUCAS LEE</name> as he
+               exits his trailer, smoking a cigarette (blacked out). He
+               skates towards the set, doing kickflips. The spectators go
+               ’oooh’.
+            </stage>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <p>I want to have his adopted babies.</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>Oh, man. We gotta go.</p>
+            </sp>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>What? Why?</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>I used to date that clown.</p>
+            </sp>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <p>Slut.</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>Wallace. I am not a slut.</p>
+            </sp>
+            
+            <pb n="64"/>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <p>I can think of no higher accolade.</p>
+            </sp>
+
+            <stage type="action">
+               <name ref="#lucas">Lucas</name> steps to his mark and puffs up into action hero mode.
+            </stage>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>Action.</p>
+            </sp>
+
+            <stage type="business">
+               <name ref="#lucas">Lucas Lee</name> points his board at the GOON.
+            </stage>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>Oh...my...God...</p>
+            </sp>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>Hey. The only thing keeping me and
+               her apart is the two minutes it’s
+               gonna take to kick your ass.</p>
+            </sp>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>...you dated a FAMOUS guy?!</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>In 9th grade. We had drama.
+               Actually, it might have been math.
+               I just remember there being lots of
+               drama.</p>
+            </sp>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>HEY!!!</p>
+            </sp>
+
+            <stage type="action">
+               <name ref="#lucas">Lucas Lee</name> points at <name ref="#scott">Scott</name>, who remains oblivious.
+            </stage>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>He just followed me around. He was
+               a little snot nosed brat.</p>
+            </sp>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>He had snot? In his nose? But he’s
+               famous!</p>
+            </sp>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>HEY!!!</p>
+            </sp>
+
+            <sp who="#ramona">
+               <speaker>RAMONA</speaker>
+               <p>It’s not a big deal. I only dated
+               him for a week and a half</p>
+            </sp>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>I’m talking to you <name ref="#scott">Scott Pilgrim</name>!</p>
+            </sp>
+
+            <stage type="action">
+               <name ref="#lucas">Lucas Lee</name> stomps towards <name ref="#scott">Scott</name>, who gasps.
+            </stage>
+
+            <pb n="65"/>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>He’s famous and he talked to me!</p>
+            </sp>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>The only thing keeping me and her
+               apart is the two minutes it’s gonna
+               take to kick your ass!</p>
+            </sp>
+
+            <sp who="#scott">
+               <speaker>SCOTT</speaker>
+               <p>Can I get</p>
+            </sp>
+
+            <stage type="violence">
+               POW! <name ref="#lucas">Lucas Lee</name> punches <name ref="#scott">Scott</name>, flooring him. <name ref="#scott">Scott</name> comes back
+               up with a pen and paper, wobbly.
+            </stage>
+
+            <sp who="#scott">
+               <speaker>SCOTT (cont’d)</speaker>
+               <p>Can I get your autograph?</p>
+            </sp>
+
+            <stage type="violence">
+               POW! <name ref="#lucas">Lucas Lee</name> PUNCHES <name ref="#scott">Scott</name> again. He nods to <name ref="#ramona">Ramona</name>.
+            </stage>
+
+            <sp who="#lucas">
+               <speaker>LUCAS LEE</speaker>
+               <p>Sup. How’s life? He seems nice.</p>
+            </sp>
+
+            <stage type="violence">
+               <name ref="#lucas">Lucas Lee</name> THROWS <name ref="#scott">Scott</name> up into a castle turret, crumbling
+               it. <name ref="#scott">Scott</name> CRASHES down through scaffolding onto the set.
+               <name ref="#lucas">Lucas</name> holds up his hands for a quick continuity photo, then
+               stomps over to pick up a dazed <name ref="#scott">Scott</name> from the ground.
+            </stage>
+
+            <sp who="#wallace">
+               <speaker>WALLACE</speaker>
+               <stage type="delivery">(swooning from the sidelines)</stage>
+               <p>Scott. Evil ex. Fight.</p>
+            </sp>
+         </div>
+      </body>
+   </text>
+</TEI>
