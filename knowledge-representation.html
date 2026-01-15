@@ -12,6 +12,12 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-turtle.min.js"></script>
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -57,9 +63,9 @@
           </li>
           <li class="dropdown"><a href="knowledge-representation.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#text analysis">Text Analysis</a></li>
-              <li><a href="#rdf production">RDF Production</a></li>
-              <li><a href="#rdf visualization">RDF Visualization</a></li>
+              <li><a href="#text-analysis">Text Analysis</a></li>
+              <li><a href="#rdf-production">RDF Production</a></li>
+              <li><a href="#rdf-visualization">RDF Visualization</a></li>
             </ul>
           </li>
           <li><a href="documentation.html">Documentation</a></li>
@@ -75,12 +81,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/bg.jpg);">
       <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>Knowledge Representation</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Knowledge Representation</li>
           </ol>
         </nav>
       </div>
@@ -89,17 +94,215 @@
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
+<div id="rdf-production" class="container section-title" data-aos="fade-up">
+  <h2>RDF Production</h2>
+  
+  <p class="paragraph">
+    The primary objective and final technical milestone of this project was the transformation of heterogeneous data sources into a unified <strong>RDF format</strong>. Every object in our collection—whether stored in <strong>CSV</strong> or other digital formats—was systematically converted into a machine-readable Linked Data format.
+  </p><br>
+
+  <p class="paragraph">
+    To achieve this, we developed a robust <strong>Python-based pipeline</strong> (<em>rdf_convert.py</em>) tailored to the specific structure of each input file. The transformation process followed a rigorous methodology:
+  </p><br>
+
+  <ul class="paragraph">
+    <li><strong>URI Minting:</strong> Identifying and assigning unique subject URIs within the <em>https://scottpilgrim.org/resource/</em> namespace.</li>
+    <li><strong>Predicate Mapping:</strong> Aligning data fields with established ontologies such as Schema.org, FOAF, Dublin Core, Music Ontology, and Relationship Ontology.</li>
+    <li><strong>Data Typing:</strong> Carefully differentiating between <strong>Literals</strong> (names, years, descriptions) and <strong>Resources</strong> (linking to other internal URIs or external entities), ensuring compatibility with the domain and range of the chosen properties.</li>
+    <li><strong>Semantic Enrichment:</strong> Building contextual layers by connecting characters to their musical instruments, social relationships, and geographical locations.</li>
+  </ul><br>
+
+  <p class="paragraph">
+    For the majority of our datasets—including the Anime (ANIM), Characters (PPL), Instruments (GTR), and Soundtracks (SNDTRCK)—we utilized <strong>CSV format</strong> as the intermediary storage. The logic behind our Python transformation was modular: for each row, the script parsed the predicate, resolved it through a prefix mapping, and determined the object type. We ensured that all relevant namespaces were bound to the RDF graph for standardization and readability.
+  </p><br>
+
+  <p class="paragraph">
+    All resulting graphs were serialized in <strong>Turtle (.ttl)</strong> format. This format was chosen for its high human-readability and its clear representation of the <strong>Subject–Predicate–Object</strong> pattern, making the data easily queryable via SPARQL. The technical stack relied on <strong>RDFLib</strong> for graph construction and serialization, maintaining a shared structure across all scripts to ensure overall coherence.
+  </p>
+
+
+<div class="container" data-aos="fade-up">
+  <div class="section-title">
+    <h2 id="rdf-production">Data Orchestration: From Heterogeneous Sources to RDF</h2>
+    <p class="paragraph">Below is the example of our Python pipeline used for RDF conversion and namespace management.</p>
+  </div>
+
+  <div class="code-scroll-window">
+    <pre><code class="language-python">
+# ======== Base Configuration ========= #
+import csv
+import os
+from rdflib import Graph, Namespace, URIRef, Literal, RDF, XSD
+
+# All Namespaces
+NS = {
+    "sp": Namespace("https://scottpilgrim.org/resource/"),
+    "bf": Namespace("http://id.loc.gov/ontologies/bibframe/"),
+    "dcterms": Namespace("http://purl.org/dc/terms/"),
+    "foaf": Namespace("http://xmlns.com/foaf/0.1/"),
+    "gn": Namespace("http://www.geonames.org/ontology#"),
+    "owl": Namespace("http://www.w3.org/2002/07/owl#"),
+    "rdfs": Namespace("http://www.w3.org/2000/01/rdf-schema#"),
+    "schema": Namespace("https://schema.org/"),
+    "skos": Namespace("http://www.w3.org/2004/02/skos/core#"),
+    "mo": Namespace("http://purl.org/ontology/mo/"),
+    "rel": Namespace("http://purl.org/vocab/relationship/"),
+    "rdf": Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
+    "org": Namespace("http://www.w3.org/ns/org#")
+}
+
+def init_graph():
+    g = Graph()
+    for prefix, ns in NS.items():
+        g.bind(prefix, ns)
+    return g
+
+g = init_graph()
+
+def get_sp_uri(val):
+    if not val: return None
+    return NS["sp"][val.replace("local:", "").strip()]
+
+# ======== INDIVIDUAL FILE PROCESSING (MANUAL) ========= #
+
+# 1. PPL.csv (Characters & Persons)
+if os.path.exists("PPL.csv"):
+    with open("PPL.csv", newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Subject definition
+            sub = NS["sp"][row["id"]]
+            
+            # 1. rdf:type 
+            if row.get("rdf:type"):
+                type_prefix, type_term = row["rdf:type"].split(':')
+                g.add((sub, RDF.type, NS[type_prefix][type_term]))
+            else:
+                # Fallback logic if rdf:type is empty
+                g.add((sub, RDF.type, NS["schema"]["FictionalCharacter"] if "char_" in row["id"] else NS["foaf"]["Person"]))
+
+            # 2. foaf:name (Literal)
+            if row.get("foaf:name"):
+                g.add((sub, NS["foaf"]["name"], Literal(row["foaf:name"])))
+
+            # 3. schema:roleName (Literal - Protagonist, Support etc.)
+            if row.get("schema:roleName"):
+                g.add((sub, NS["schema"]["roleName"], Literal(row["schema:roleName"])))
+
+            # 4. schema:portrayedBy (URI - Linked to another Person)
+            if row.get("schema:portrayedBy"):
+                g.add((sub, NS["schema"]["portrayedBy"], get_sp_uri(row["schema:portrayedBy"])))
+
+            # 5. org:memberOf (URI - Linked to a Group/Band)
+            if row.get("org:memberOf"):
+           
+                for group in row["org:memberOf"].split(';'):
+                    g.add((sub, NS["org"]["memberOf"], get_sp_uri(group)))
+
+            # 6. owl:sameAs (URIRef - Wikidata/External Links)
+            if row.get("owl:sameAs"):
+                g.add((sub, NS["owl"]["sameAs"], URIRef(row["owl:sameAs"])))
+
+            # 7. foaf:page (URIRef - Fandom/Web pages)
+            if row.get("foaf:page"):
+                g.add((sub, NS["foaf"]["page"], URIRef(row["foaf:page"])))
+
+            # 8. dcterms:isPartOf (URI - Linked to the Universe)
+            if row.get("dcterms:isPartOf"):
+                g.add((sub, NS["dcterms"]["isPartOf"], get_sp_uri(row["dcterms:isPartOf"])))
+
+    </code></pre>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="https://github.com/yunglingwist/LODbob-omb/blob/main/rdf_convert.py" target="_blank" class="btn-github-link">
+      <i class="bi bi-github"></i> View rdf_convert.py on GitHub
+    </a>
+  </div>
+</div>
+  
+
+<div class="container" data-aos="fade-up">
+  <div class="section-title">
+    <h2>RDF Serialization: Turtle Format (.ttl)</h2>
+    <p class="paragraph">Below is the example RDF serialization of our Scott Pilgrim knowledge graph.</p>
+  </div>
+
+  <div class="turtle-full-view">
+    <pre><code class="language-turtle">
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix schema: <https://schema.org/> .
+@prefix sp: <https://scottpilgrim.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sp:char_gideon_graves a schema:FictionalCharacter ;
+    dcterms:isPartOf sp:universe_scott_pilgrim ;
+    org:memberOf sp:group_league_of_evil_exes ;
+    foaf:name "Gideon Graves" ;
+    foaf:page <https://scottpilgrim.fandom.com/wiki/Gideon_Graves> ;
+    schema:portrayedBy sp:person_jason_schwartzman ;
+    schema:roleName "Antagonist" .
+
+sp:char_ken_katayanagi a schema:FictionalCharacter ;
+    dcterms:isPartOf sp:universe_scott_pilgrim ;
+    org:memberOf sp:group_league_of_evil_exes ;
+    foaf:name "Ken Katayanagi" ;
+    foaf:page <https://scottpilgrim.fandom.com/wiki/Ken_Katayanagi> ;
+    schema:portrayedBy sp:person_shota_saito ;
+    schema:roleName "Antagonist" .
+
+sp:char_kyle_katayanagi a schema:FictionalCharacter ;
+    dcterms:isPartOf sp:universe_scott_pilgrim ;
+    org:memberOf sp:group_league_of_evil_exes ;
+    foaf:name "Kyle Katayanagi" ;
+    foaf:page <https://scottpilgrim.fandom.com/wiki/Kyle_Katayanagi> ;
+    schema:portrayedBy sp:person_keita_saito ;
+    schema:roleName "Antagonist" .
+
+    </code></pre>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="https://github.com/yunglingwist/LODbob-omb/blob/main/scott_pilgrim_master.ttl" target="_blank" class="btn-github-link">
+      <i class="bi bi-github"></i> View Full Dataset on GitHub
+    </a>
+  </div>
+</div>
+
+<div id="rdf-visualization" class="container section-title" data-aos="fade-up">
+  <h2>RDF Visualization</h2>
+  
+  <p class="paragraph">
+    An <strong>RDF (Resource Description Framework)</strong> representation is a structured method for describing data through triples: <strong>subject, predicate, and object</strong>. These triples form a directed graph where nodes represent resources or literal values, and edges represent the semantic relationships between them. This framework enables our Scott Pilgrim dataset to be linked and understood across disparate systems, serving as a core component of the <strong>Semantic Web</strong>.
+  </p><br>
+
+  <p class="paragraph">
+    Following our theoretical and conceptual models, we described each of our items in <strong>RDF Turtle (.ttl)</strong> format. We assigned a unique URI to every object and entity to ensure seamless connectivity within our ontology. To validate the structural integrity and visual coherence of our work, we utilized <strong>RDF Grapher</strong>. This tool allowed us to transform our Turtle code into visual representations, confirming that the relationships between characters, media formats, and real-world locations were correctly mapped as an interconnected network.
+  </p><br>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10 text-center">
+      <img src="rdf-visualization.png" class="img-fluid" alt="RDF Graph Visualization" style="border: 1px solid #eee; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <p class="mt-3" style="font-style: italic; font-size: 0.9rem; color: #666;">
+        Figure 1: Visual representation of the Scott Pilgrim Knowledge Graph generated via RDF Grapher.
+      </p>
+    </div>
+  </div>
+
+  <p class="paragraph">
+    Finally, we compiled all individual Turtle files into a <strong>single, comprehensive dataset</strong>. This unified representation acts as our final model, where fictional narratives, musical inspirations, and geographic locations coexist in a navigable and machine-interpretable knowledge platform.
+  </p>
+</div>
 
     </section><!-- /Starter Section Section -->
+
+    
 
   </main>
 
