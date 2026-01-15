@@ -11,6 +11,8 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -199,6 +201,432 @@
     </table>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+
+<section id="theoretical-model" class="section">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Theoretical Model</h2>
+        </div>
+
+<div class="row">
+            <div class="col-lg-12">
+                <p class="paragraph">
+                    A <strong>theoretical model</strong> serves as the intellectual scaffolding of this project, 
+                    structuring and connecting cultural heritage entities by defining the relationships between 
+                    them through a curated semantic vocabulary. Unlike a simple data map, this model employs 
+                    <strong>natural language predicates</strong> to breathe meaning into raw data, allowing for 
+                    the expression of complex narrative, social, and transmedia relationships in a precise and 
+                    standardized manner.
+                </p>
+
+                <p class="paragraph">
+                    The <strong>Scott Pilgrim Ecosystem</strong> is a multifaceted cultural phenomenon that 
+                    bridges graphic novels, cinematic productions, digital games, and indie rock subcultures. 
+                    Our theoretical model captures these intricate connections using predicates that link characters, 
+                    transmedia adaptations, musical artifacts, and thematic concepts.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mb-2">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-sm btn-outline-primary" onclick="zoomIn()">Zoom In</button>
+                <button type="button" class="btn btn-sm btn-outline-primary" onclick="zoomOut()">Zoom Out</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="resetZoom()">Reset View</button>
+            </div>
+        </div>
+
+        <div id="mermaid-graph" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+    </div>
+<script type="text/plain" id="theoretical-data">
+graph TB
+    subgraph Characters["Characters"]
+        Scott["Scott Pilgrim<br/>(Protagonist)"]
+        Ramona["Ramona Flowers<br/>(Protagonist)"]
+        Wallace["Wallace Wells<br/>(Support)"]
+        Kim["Kim Pine<br/>(Support)"]
+        Stephen["Stephen Stills<br/>(Support)"]
+        Neil["Neil Nordegraf<br/>(Support)"]
+        Knives["Knives Chau<br/>(Support)"]
+        Envy["Envy Adams<br/>(Support)"]
+        
+        Gideon["Gideon Graves<br/>(Antagonist)"]
+        Matthew["Matthew Patel<br/>(Antagonist)"]
+        Lucas["Lucas Lee<br/>(Antagonist)"]
+        Roxanne["Roxanne Richter<br/>(Antagonist)"]
+        Todd["Todd Ingram<br/>(Antagonist)"]
+        Ken["Ken Katayanagi<br/>(Antagonist)"]
+        Kyle["Kyle Katayanagi<br/>(Antagonist)"]
+    end
+
+    subgraph Media["Media & Works"]
+        Comic["Comic Series<br/>6 Volumes<br/>2004-2010"]
+        Movie["Movie<br/>2010<br/>112 Minutes"]
+        Game["Video Game<br/>2010<br/>Beat 'em up"]
+        Anime["Anime Series<br/>2023<br/>8 Episodes"]
+        Soundtrack["Soundtrack<br/>Album 2010"]
+    end
+
+    subgraph Music["Music & Bands"]
+        SBO["Sex Bob-Omb<br/>Indie Rock"]
+        CAD["The Clash at<br/>Demonhead<br/>Indie Rock"]
+        Song1["We Are Sex Bob-Omb"]
+        Song2["Garbage Truck"]
+        Song3["Summertime"]
+        Song4["Threshold"]
+        Song5["Black Sheep"]
+        SPSong["Scott Pilgrim<br/>Song by Plumtree"]
+    end
+
+    subgraph Organizations["Organizations"]
+        LEE["League of Evil Exes"]
+        Amazon["Amazon.ca"]
+    end
+
+    subgraph Items["Items & Assets"]
+        Bass["Rickenbacker 4001<br/>Bass Guitar"]
+        Poster["Movie Poster"]
+        Screenplay["Screenplay"]
+        CasaLoma["Casa Loma<br/>Historic Building"]
+        Plumtree["Predicts the Future<br/>Album 1997"]
+    end
+
+    subgraph Actors["Actors"]
+        MichaelCera["Michael Cera"]
+        MaryWinstead["Mary Elizabeth<br/>Winstead"]
+        KieranCulkin["Kieran Culkin"]
+        AltisonPill["Alison Pill"]
+        MarkWebber["Mark Webber"]
+        JohnnySimmons["Johnny Simmons"]
+        EllenWong["Ellen Wong"]
+        BrieLarson["Brie Larson"]
+        BrandonRouth["Brandon Routh"]
+        ChrisEvans["Chris Evans"]
+        JasonSchwartzman["Jason Schwartzman"]
+        SatyaBhabha["Satya Bhabha"]
+        ShotaSaito["Shota Saito"]
+        KeitaSaito["Keita Saito"]
+        MaeWhitman["Mae Whitman"]
+    end
+
+    %% Character Relationships
+    Scott -->|lifePartnerOf| Ramona
+    Scott -->|livesWith| Wallace
+    Scott -->|friendOf| Wallace
+    Scott -->|friendOf| Kim
+    Scott -->|friendOf| Stephen
+    Scott -->|friendOf| Neil
+    Scott -->|antagonistOf| LEE
+    Scott -->|memberOf| SBO
+    Scott -->|owns| Bass
+    
+    Ramona -->|friendOf| Kim
+    Ramona -->|friendOf| Wallace
+    Ramona -->|ambivalentOf| LEE
+    Ramona -->|memberOf| Amazon
+    
+    Wallace -->|friendOf| Knives
+    Wallace -->|friendOf| Kim
+    
+    Kim -->|friendOf| Knives
+    Kim -->|friendOf| Stephen
+    Kim -->|memberOf| SBO
+    
+    Stephen -->|friendOf| Neil
+    Stephen -->|memberOf| SBO
+    
+    Neil -->|lifePartnerOf| Knives
+    Neil -->|memberOf| SBO
+    
+    Knives -->|friendOf| Kim
+    
+    Envy -->|lifePartnerOf| Todd
+    Envy -->|memberOf| CAD
+    
+    Todd -->|memberOf| CAD
+    Todd -->|memberOf| LEE
+    
+    %% Antagonists
+    Gideon -->|memberOf| LEE
+    Matthew -->|memberOf| LEE
+    Lucas -->|memberOf| LEE
+    Roxanne -->|memberOf| LEE
+    Ken -->|memberOf| LEE
+    Kyle -->|memberOf| LEE
+    
+    %% Actor Portrayals
+    Scott -->|portrayedBy| MichaelCera
+    Ramona -->|portrayedBy| MaryWinstead
+    Wallace -->|portrayedBy| KieranCulkin
+    Kim -->|portrayedBy| AltisonPill
+    Stephen -->|portrayedBy| MarkWebber
+    Neil -->|portrayedBy| JohnnySimmons
+    Knives -->|portrayedBy| EllenWong
+    Envy -->|portrayedBy| BrieLarson
+    Todd -->|portrayedBy| BrandonRouth
+    Lucas -->|portrayedBy| ChrisEvans
+    Gideon -->|portrayedBy| JasonSchwartzman
+    Matthew -->|portrayedBy| SatyaBhabha
+    Roxanne -->|portrayedBy| MaeWhitman
+    Ken -->|portrayedBy| ShotaSaito
+    Kyle -->|portrayedBy| KeitaSaito
+    
+    %% Media Relationships
+    Comic -->|adaptedTo| Movie
+    Comic -->|adaptedTo| Game
+    Comic -->|adaptedTo| Anime
+    Movie -->|hasMusic| Soundtrack
+    
+    %% Music Relationships
+    SBO -->|performs| Song1
+    SBO -->|performs| Song2
+    SBO -->|performs| Song3
+    SBO -->|performs| Song4
+    CAD -->|performs| Song5
+    
+    Song1 -->|appearsIn| Soundtrack
+    Song2 -->|appearsIn| Soundtrack
+    Song3 -->|appearsIn| Soundtrack
+    Song4 -->|appearsIn| Soundtrack
+    Song5 -->|appearsIn| Soundtrack
+    SPSong -->|from| Plumtree
+    
+    %% Items
+    Bass -->|ownedBy| Scott
+    Poster -->|from| Movie
+    Screenplay -->|from| Movie
+    CasaLoma -->|locationFor| Movie
+    
+    %% Styling
+    classDef protagonist fill:#4CAF50,stroke:#333,color:#fff
+    classDef antagonist fill:#f44336,stroke:#333,color:#fff
+    classDef support fill:#2196F3,stroke:#333,color:#fff
+    classDef media fill:#FF9800,stroke:#333,color:#fff
+    classDef music fill:#9C27B0,stroke:#333,color:#fff
+    classDef actor fill:#00BCD4,stroke:#333,color:#fff
+    classDef org fill:#673AB7,stroke:#333,color:#fff
+    classDef item fill:#FFC107,stroke:#333,color:#000
+    
+    class Scott,Ramona protagonist
+    class Gideon,Matthew,Lucas,Roxanne,Todd,Ken,Kyle antagonist
+    class Wallace,Kim,Stephen,Neil,Knives,Envy support
+    class Comic,Movie,Game,Anime media
+    class SBO,CAD,Song1,Song2,Song3,Song4,Song5,SPSong,Plumtree music
+    class MichaelCera,MaryWinstead,KieranCulkin,AltisonPill,MarkWebber,JohnnySimmons,EllenWong,BrieLarson,BrandonRouth,ChrisEvans,JasonSchwartzman,SatyaBhabha,ShotaSaito,KeitaSaito,MaeWhitman actor
+    class LEE,Amazon org
+    class Bass,Poster,Screenplay,CasaLoma item
+
+</script>
+
+
+    </div>
+</section>
+
+
+<section id="conceptual-model" class="section">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Conceptual Model: Ontological Mapping and LOD Architecture</h2>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <p>The <strong>conceptual model</strong> represents the formal refactoring of our domain entities into machine-readable classes. Below is the technical schema showing how <strong>RDF/OWL</strong> properties connect different entity types.</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-2">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-sm btn-outline-success" onclick="zoomInC()">Zoom In</button>
+                <button type="button" class="btn btn-sm btn-outline-success" onclick="zoomOutC()">Zoom Out</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="resetZoomC()">Reset View</button>
+            </div>
+        </div>
+
+        <div id="conceptual-wrapper" style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 15px; background: #fdfdfd; overflow: hidden; position: relative; cursor: grab;">
+            <div id="mermaid-conceptual" class="mermaid" style="height: 100%; display: flex; justify-content: center; align-items: center;">
+graph TD
+
+%% ==================================================
+%% NAMESPACES & LEGEND (Abstracted as Subgraphs)
+%% ==================================================
+subgraph Legend ["Formal Ontology Mapping"]
+    direction LR
+    S[Schema.org] --- D[Dublin Core]
+    F[FOAF/REL] --- M[Music Ontology]
+    E[EDM/FRBR] --- O[ORG Ontology]
+end
+
+%% ==================================================
+%% CORE CLASSES (Refactored)
+%% ==================================================
+Agent["foaf:Agent"]
+Work["schema:CreativeWork"]
+Place["schema:Place"]
+PhysicalObject["edm:PhysicalThing"]
+
+%% ==================================================
+%% AGENTS & COLLECTIVES
+%% ==================================================
+Person["foaf:Person"]
+Organization["foaf:Organization"]
+MusicGroup["mo:MusicGroup"]
+
+Person -- "rdfs:subClassOf" --> Agent
+Organization -- "rdfs:subClassOf" --> Agent
+MusicGroup -- "rdfs:subClassOf" --> Organization
+
+%% ==================================================
+%% THE FICTIONAL DOMAIN (Transmedia Entities)
+%% ==================================================
+Character["schema:FictionalCharacter"]
+Universe["schema:CreativeWork"]
+
+Character -- "rdfs:subClassOf" --> Agent
+Character -- "dcterms:isPartOf" --> Universe
+
+%% ==================================================
+%% FORMALIZED CREATIVE WORKS
+%% ==================================================
+Comic["schema:ComicSeries"]
+Movie["schema:Movie"]
+TV["schema:TVSeries"]
+Game["schema:VideoGame"]
+Album["schema:MusicAlbum"]
+Recording["schema:MusicRecording"]
+
+Comic -- "rdfs:subClassOf" --> Work
+Movie -- "rdfs:subClassOf" --> Work
+TV -- "rdfs:subClassOf" --> Work
+Game -- "rdfs:subClassOf" --> Work
+Album -- "rdfs:subClassOf" --> Work
+Recording -- "rdfs:subClassOf" --> Work
+
+%% ==================================================
+%% MATERIAL CULTURE & OBJECTS
+%% ==================================================
+Instrument["mo:Instrument"]
+Poster["schema:VisualArtwork"]
+
+Instrument -- "rdfs:subClassOf" --> PhysicalObject
+Poster -- "rdfs:subClassOf" --> Work
+
+%% ==================================================
+%% FORMAL RELATIONS (The Logic)
+%% ==================================================
+%% FRBR / Derivative Relations
+Movie -- "schema:isBasedOn" --> Comic
+TV -- "schema:isBasedOn" --> Comic
+Game -- "schema:isBasedOn" --> Comic
+
+%% Part-Whole Relations (DCTerms / Schema)
+Movie -- "schema:hasPart" --> Screenplay["schema:CreativeWork"]
+Movie -- "schema:musicBy" --> Album
+Album -- "schema:hasPart" --> Recording
+TV -- "schema:numberOfEpisodes" --> Literal
+
+%% Agent-Work Interactions
+Person -- "schema:creator" --> Work
+Person -- "schema:actor" --> Movie
+Person -- "schema:portrayedBy" --> Character
+Person -- "schema:performer" --> Recording
+MusicGroup -- "mo:performer" --> Recording
+
+%% Social & Organizational Links
+Character -- "org:memberOf" --> MusicGroup
+Character -- "org:memberOf" --> League["foaf:Organization"]
+Character -- "rel:antagonistOf" --> League
+Character -- "rel:lifePartnerOf" --> Character
+Character -- "schema:owns" --> Instrument
+
+%% Spatial & Identity Context
+Work -- "schema:locationCreated" --> Place
+Work -- "owl:sameAs" --> ExternalRef["External Authority (Wikidata/DBpedia)"]
+
+%% ==================================================
+%% STYLING
+%% ==================================================
+style Legend fill:#f5f5f5,stroke:#333
+style Agent fill:#fff3e0,stroke:#e65100
+style Work fill:#e1f5fe,stroke:#01579b
+style PhysicalObject fill:#f3e5f5,stroke:#4a148c
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Mermaid Başlatma
+    mermaid.initialize({ 
+        startOnLoad: false, 
+        theme: 'neutral',
+        securityLevel: 'loose',
+        flowchart: { useMaxWidth: false, htmlLabels: true }
+    });
+
+    let theoreticalPanZoom;
+    let conceptualPanZoom;
+
+    async function initInteractiveGraphs() {
+        // --- THEORETICAL MODEL ---
+        try {
+            const theoData = document.getElementById('theoretical-data').textContent.trim();
+            const { svg } = await mermaid.render('theoretical-svg', theoData);
+            const container = document.getElementById('mermaid-graph');
+            container.innerHTML = svg;
+
+            const svgElement = container.querySelector('svg');
+            svgElement.style.width = "100%";
+            svgElement.style.height = "100%";
+
+            theoreticalPanZoom = svgPanZoom(svgElement, {
+                zoomEnabled: true,
+                controlIconsEnabled: false,
+                fit: true,
+                center: true
+            });
+        } catch (error) {
+            console.error("Theoretical Error:", error);
+        }
+
+        // --- CONCEPTUAL MODEL ---
+        try {
+            const conceptualContainer = document.querySelector('#mermaid-conceptual');
+            const conceptualData = conceptualContainer.textContent.trim();
+            const { svg: svgC } = await mermaid.render('conceptual-svg', conceptualData);
+            
+            conceptualContainer.innerHTML = svgC;
+            const svgElementC = conceptualContainer.querySelector('svg');
+            svgElementC.style.width = "100%";
+            svgElementC.style.height = "100%";
+
+            conceptualPanZoom = svgPanZoom(svgElementC, {
+                zoomEnabled: true,
+                controlIconsEnabled: false,
+                fit: true,
+                center: true
+            });
+        } catch (error) {
+            console.error("Conceptual Error:", error);
+        }
+    }
+
+    window.addEventListener('load', initInteractiveGraphs);
+
+    // Zoom Fonksiyonları
+    function zoomIn() { if(theoreticalPanZoom) theoreticalPanZoom.zoomIn(); }
+    function zoomOut() { if(theoreticalPanZoom) theoreticalPanZoom.zoomOut(); }
+    function resetZoom() { if(theoreticalPanZoom) { theoreticalPanZoom.resetZoom(); theoreticalPanZoom.center(); theoreticalPanZoom.fit(); } }
+
+    function zoomInC() { if(conceptualPanZoom) conceptualPanZoom.zoomIn(); }
+    function zoomOutC() { if(conceptualPanZoom) conceptualPanZoom.zoomOut(); }
+    function resetZoomC() { if(conceptualPanZoom) { conceptualPanZoom.resetZoom(); conceptualPanZoom.center(); conceptualPanZoom.fit(); } }
+</script>
 
     </section><!-- /Starter Section Section -->
 
