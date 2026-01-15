@@ -731,7 +731,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -771,6 +771,10 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+}
+
+.paragraph {
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
