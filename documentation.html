@@ -108,44 +108,6 @@ Our final collection was managed through a structured collaborative environment,
       
       </div>
 
-      <div class="container section-title" data-aos="fade-up">
-         <h2>Metadata Analysis: Extracting Meaningful Information</h2>
-        <p class="paragraph">This phase of the project focuses on unraveling the hidden connections within the Scott Pilgrim ecosystem, a multifaceted cultural phenomenon. Unlike traditional heritage projects centered on institutional archives, our research addresses a modern transmedia narrative that seamlessly bridges graphic novels, cinematic productions, digital games, and musical subcultures.</p><br>
-<p class="paragraph">For our core media entities—comprising the Anime series (ANIM), the Live-action film (SCTT_MV), and the Video game (VDGM)—we synthesized data from diverse open-knowledge platforms and digital fan-curated documentations. Since these sources often lack a singular, unified standard, we established Schema.org as our primary conceptual framework. This allowed us to map heterogeneous production details, such as directors, screenwriters, and genres, into a consistent categorical structure that treats different media formats as part of a single expressive continuum.</p><br>
- <p class="paragraph">A distinctive feature of our project is the modeling of Musical and Material culture. For entities like the band Plumtree (the real-world inspiration for the franchise) and iconic musical gear (e.g., the Rickenbacker 4003 bass guitar), we moved beyond generic descriptors. By integrating the Music Ontology (MO) and FOAF (Friend of a Friend), we moved from simple labeling to technical definitions of musical performance and identity. This approach allowed us to formally define how a fictional character relates to real-world musical genres and instruments.</p><br>
-<p class="paragraph">For geographical entities, such as the Toronto landmark Casa Loma (CSLM), and documentary objects like movie scripts, we adopted Dublin Core (DCTERMS). This choice ensured that physical locations and digital textual formats were described using a standard compatible with global archival protocols, emphasizing spatial and formal properties.</p><br>
-<p class="paragraph">All identified entities were organized into 14 structured CSV files, which were subsequently processed through a custom Python-based workflow to generate RDF triples. This process not only cleaned the raw data but also redefined the semantic relationships (Subject-Predicate-Object) to match the project's vision of a highly interconnected transmedia graph.
-</p><br>
-      
-      </div>
-
-      <div class="container section-title" data-aos="fade-up">
-  <h2>Metadata Standards</h2>
-  <p class="paragraph">
-    The selection of metadata standards was driven by the principle of <strong>interoperability</strong>, ensuring that our dataset can "speak" to other systems within the Linked Open Data (LOD) cloud. By leveraging a multi-ontology approach, we were able to capture the specific nuances of the Scott Pilgrim universe:
-  </p><br>
-
-  <p class="paragraph">
-    <strong>Schema.org:</strong> This serves as the "Creative Work" backbone of the project. It is used to define the relationships between different adaptations (<em>schema:isBasedOn</em>) and to capture the roles of contributors within the ANIM, SCTT_MV, and CMC datasets.
-  </p><br>
-
-  <p class="paragraph">
-    <strong>Dublin Core (DCTERMS):</strong> Implemented across all datasets to standardize foundational metadata such as titles, identifiers, and formats. It ensures our data aligns with international digital archiving standards for long-term discovery.
-  </p><br>
-
-  <p class="paragraph">
-    <strong>FOAF & Relationship Ontology (REL):</strong> Applied to the PPL and RLTNS files to move beyond static descriptions. These standards model the complex network of the characters, using semantic properties like <em>rel:friendOf</em> and <em>rel:antagonistOf</em> to create a dynamic social network.
-  </p><br>
-
-  <p class="paragraph">
-    <strong>Music Ontology (MO) & Organization Ontology (ORG):</strong> These standards capture the "indie rock" spirit of the theme. They link characters to musical collectives (<em>org:memberOf</em>) and define the technical attributes of the instruments and soundtracks used within the story.
-  </p><br>
-
-  <p class="paragraph">
-    <strong>OWL (Web Ontology Language):</strong> To ensure our project contributes to the global web of data, we utilized the <em>owl:sameAs</em> property. This links our internal resources to external authoritative hubs like Wikidata and DBpedia, making our data discoverable and semantically linked to the wider world.
-  </p>
-</div>
-
 
 <div class="container section-title" data-aos="fade-up">
   <h2>Conclusions</h2>
